@@ -1,18 +1,8 @@
 [
     {
-        "caretX": 28,
-        "caretY": 4,
-        "filename": "/home/meowrain/下载/Project1/utils.h",
-        "focused": false,
-        "isOpen": true,
-        "leftChar": 1,
-        "order": 5,
-        "topLine": 1
-    },
-    {
-        "caretX": 16,
+        "caretX": 1,
         "caretY": 1,
-        "filename": "/home/meowrain/下载/Project1/utils.c",
+        "filename": "D:/project/experiment_cs/file.h",
         "focused": false,
         "isOpen": true,
         "leftChar": 1,
@@ -20,62 +10,33 @@
         "topLine": 1
     },
     {
-        "caretX": 22,
-        "caretY": 130,
-        "filename": "/home/meowrain/下载/Project1/student.c",
+        "caretX": 41,
+        "caretY": 8,
+        "filename": "D:/project/experiment_cs/student.c",
         "focused": false,
         "isOpen": true,
         "leftChar": 1,
-        "order": 6,
-        "topLine": 38
-    },
-    {
-        "caretX": 50,
-        "caretY": 5,
-        "filename": "/home/meowrain/下载/Project1/testData.txt",
-        "focused": false,
-        "isOpen": false,
-        "leftChar": 1,
+        "order": 1,
         "topLine": 1
     },
     {
-        "caretX": 21,
-        "caretY": 13,
-        "filename": "/home/meowrain/下载/Project1/main.c",
+        "caretX": 24,
+        "caretY": 2,
+        "filename": "D:/project/experiment_cs/file.c",
         "focused": true,
-        "isOpen": true,
-        "leftChar": 1,
-        "order": 0,
-        "topLine": 1
-    },
-    {
-        "caretX": 21,
-        "caretY": 57,
-        "filename": "/home/meowrain/下载/Project1/student.h",
-        "focused": false,
-        "isOpen": true,
-        "leftChar": 1,
-        "order": 4,
-        "topLine": 46
-    },
-    {
-        "caretX": 11,
-        "caretY": 15,
-        "filename": "/home/meowrain/下载/Project1/file.c",
-        "focused": false,
         "isOpen": true,
         "leftChar": 1,
         "order": 2,
         "topLine": 1
     },
     {
-        "caretX": 27,
-        "caretY": 4,
-        "filename": "/home/meowrain/下载/Project1/data.txt",
+        "caretX": 21,
+        "caretY": 13,
+        "filename": "D:/project/experiment_cs/main.c",
         "focused": false,
         "isOpen": true,
         "leftChar": 1,
-        "order": 1,
-        "topLine": 1
+        "order": 0,
+        "topLine": 13
     }
 ]
