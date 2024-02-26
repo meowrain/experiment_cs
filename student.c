@@ -22,21 +22,27 @@ int load_students(const char* filename){
 		
 		token = strtok(buffer,delim);
 		stu->stu_id = strdup(token);
+//		printf("%s\n",stu->stu_id);
 		token = strtok(NULL,delim);
 		stu->stu_name = strdup(token);
+//		printf("%s\n",stu->stu_name);
 		token = strtok(NULL,delim);
 		stu->stu_sex = strdup(token);
+//		printf("%s\n",stu->stu_sex);
 		token = strtok(NULL,delim);
 		stu->stu_age = atoi(token);
+//		printf("%d\n",stu->stu_age);
 		token = strtok(NULL,delim);
 		stu->stu_major = strdup(token);
+//		printf("%s\n",stu->stu_major);
 		token = strtok(NULL,delim);
 		stu->clazz = strdup(token);
-		
+//		printf("%s\n",stu->clazz);
 		// 将堆上的对象插入数组，而非栈上的对象
 		insert_stu(stu); 
+		free(stu);
 	}
-	
+
 	return 0;
 	
 }
@@ -61,7 +67,6 @@ int creat_stu_talbe(char* file_name){
  * @return 
  */
 int insert_stu_file(student* stu) {
-	
 	FILE* fp;
 	fp = fopen(FILE_NAME,"a+");
 	setPoisitionByLine(fp,2);//控制文件流指针到第二行，使得其不读取上面两行（也就是表头
@@ -87,6 +92,10 @@ int insert_stu_file(student* stu) {
 		return 1;
 	}
 	if(fprintf(fp,"%s\t",stu->stu_major) == -1) {
+		perror("fprintf");
+		return 1;
+	}
+	if(fprintf(fp,"%s\t",stu->clazz) == -1) {
 		perror("fprintf");
 		return 1;
 	}

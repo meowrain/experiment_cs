@@ -3,9 +3,9 @@
 
 CPP      = g++
 CC       = gcc
-OBJ      = student.o utils.o main.o file.o
-LINKOBJ  = student.o utils.o main.o file.o
-CLEANOBJ  =  student.o utils.o main.o file.o Project1
+OBJ      = utils.o student.o main.o file.o
+LINKOBJ  = utils.o student.o main.o file.o
+CLEANOBJ  =  utils.o student.o main.o file.o Project1
 LIBS     = 
 INCS     =  
 CXXINCS  =  
@@ -24,13 +24,13 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-student.o: student.c student.h all.h utils.h
-	$(CC) -c student.c -o student.o $(CFLAGS) 
-
-utils.o: utils.c all.h utils.h
+utils.o: utils.c utils.h all.h
 	$(CC) -c utils.c -o utils.o $(CFLAGS) 
 
-main.o: main.c student.h all.h file.h
+student.o: student.c utils.h all.h student.h
+	$(CC) -c student.c -o student.o $(CFLAGS) 
+
+main.o: main.c all.h file.h student.h
 	$(CC) -c main.c -o main.o $(CFLAGS) 
 
 file.o: file.c all.h file.h
