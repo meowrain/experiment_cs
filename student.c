@@ -103,8 +103,22 @@ int insert_stu_file(student* stu) {
 	return 0;
 }
 		
-int delete_stu(int stu_id) {
-	return 0;
+int delete_stu(char* stu_id) {
+	if(len == 0) {
+		printf("读取到的结构体数组为空，无法删除任何元素！\n");
+		return 1;
+	}
+	for(int i = 1;i<=len;i++) {
+		if(strcmp(students[i].stu_id,stu_id) == 0) {
+			printf("删除成功！\n");
+			for(int j = i;j< len;j++) {
+				students[j] = students[j+1];
+			}
+			len--;
+			return 0;
+		}
+	}
+	return 1;
 }
 		
 int save_data() {
@@ -120,3 +134,23 @@ void get_all_students() {
 		printf("%s\n",students[i].stu_name);
 	}
 }
+
+
+int query_stu_id(char* stu_id){
+	for(int i = 1;i<=len;i++) {
+		if(strcmp(students[i].stu_id,stu_id) == 0) {
+			printf("%s\t",students[i].stu_id);
+			printf("%s\t",students[i].stu_name);
+			printf("%s\t",students[i].stu_sex);
+			printf("%d\t",students[i].stu_age);
+			printf("%s\t",students[i].stu_major);
+			printf("%s\t",students[i].clazz);
+			return 0;
+		}
+	}
+	return 1;
+}
+int query_stu_name(char* stu_name);
+int query_stu_age(int stu_age);
+int query_stu_major(char* stu_major);
+int query_stu_clazz(char* clazz);

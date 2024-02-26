@@ -43,7 +43,7 @@ int insert_stu_file(student* stu);
 * @function query_stu_major 通过stu_major查询学生，返回这个专业的所有学生
 * @function query_stu_clazz 通过stu_clazz查询学生，返回这个班级的所有学生
 * */
-int query_stu_id(int stu_id);
+int query_stu_id(char* stu_id);
 int query_stu_name(char* stu_name);
 int query_stu_age(int stu_age);
 int query_stu_major(char* stu_major);
@@ -54,7 +54,7 @@ int query_stu_clazz(char* clazz);
  * @description 删除这个id的学生
  * 
  */
-int delete_stu(int stu_id);
+int delete_stu(char* stu_id);
 
 /*
 * @description 保存所有学生数据到磁盘
