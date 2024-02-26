@@ -1,0 +1,44 @@
+# Project: Project1
+# Makefile created by Red Panda C++ 2.26.2249
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Project1_private.res
+OBJ      = utils.o file.o student.o main.o $(RES)
+LINKOBJ  = utils.o file.o student.o main.o Project1_private.res
+CLEANOBJ  =  utils.o file.o student.o main.o  Project1_private.res Project1.exe
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS)  -g3 -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+utils.o: utils.c utils.h all.h
+	$(CC) -c utils.c -o utils.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+file.o: file.c file.h all.h
+	$(CC) -c file.c -o file.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+student.o: student.c utils.h all.h student.h
+	$(CC) -c student.c -o student.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.c file.h all.h student.h
+	$(CC) -c main.c -o main.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Project1_private.res: Project1_private.rc 
+	$(WINDRES) -i Project1_private.rc --input-format=rc -o Project1_private.res -O coff $(WINDRESFLAGS) 
+

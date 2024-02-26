@@ -1,0 +1,6 @@
+学号	姓名	性别	年龄	专业	班级
+---------------------------------
+20221211121	liruiyydsssss	男	24	soft ware engineer	
+20221211121	liruiyydsssss	男	24	soft ware engineer	
+20221211121	liruiyydsssss	男	24	soft ware engineer	
+20221211122	meowrain222	男	22	computer science	

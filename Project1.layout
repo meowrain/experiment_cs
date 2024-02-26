@@ -1,0 +1,71 @@
+[
+    {
+        "caretX": 2,
+        "caretY": 7,
+        "filename": "/home/meowrain/下载/Project1/student.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 2,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "/home/meowrain/下载/Project1/data.txt",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 50,
+        "caretY": 5,
+        "filename": "/home/meowrain/下载/Project1/testData.txt",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 31,
+        "caretY": 21,
+        "filename": "/home/meowrain/下载/Project1/student.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 5,
+        "topLine": 13
+    },
+    {
+        "caretX": 12,
+        "caretY": 4,
+        "filename": "/home/meowrain/下载/Project1/utils.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 4,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 10,
+        "filename": "/home/meowrain/下载/Project1/main.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "/home/meowrain/下载/Project1/file.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 3,
+        "topLine": 1
+    }
+]

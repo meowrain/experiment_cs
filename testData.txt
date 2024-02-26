@@ -1,0 +1,5 @@
+学号	姓名	性别	年龄	专业	班级
+---------------------------------
+20221211121	liruiyyds	男	24	soft ware engineer
+20221211122	mike	男	25	soft ware engineer	
+20221211123	meowrainyyds	男	24	soft ware engineer	
