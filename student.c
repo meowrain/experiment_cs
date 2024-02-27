@@ -40,7 +40,7 @@ int load_students(const char* filename) {
 //		printf("%s\n",stu->clazz);
 		// 将堆上的对象插入数组，而非栈上的对象
 		insert_stu(stu);
-		free(stu);
+//		freeCopy(stu);
 	}
 
 	return 0;
@@ -48,7 +48,7 @@ int load_students(const char* filename) {
 }
 int creat_stu_talbe(char* file_name) {
 	FILE* fp;
-	fp = fopen(file_name, "w+");
+	fp = fopen(file_name, "w");
 	if (fp == NULL) {
 		perror("fopen");
 		return 1;//表示打开错误

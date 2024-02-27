@@ -24,14 +24,14 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-utils.o: utils.c utils.h all.h
+utils.o: utils.c utils.h
 	$(CC) -c utils.c -o utils.o $(CFLAGS) 
 
-student.o: student.c utils.h all.h student.h
+student.o: student.c student.h utils.h
 	$(CC) -c student.c -o student.o $(CFLAGS) 
 
-main.o: main.c all.h file.h student.h
+main.o: main.c student.h file.h utils.h all.h
 	$(CC) -c main.c -o main.o $(CFLAGS) 
 
-file.o: file.c all.h file.h
+file.o: file.c file.h all.h
 	$(CC) -c file.c -o file.o $(CFLAGS) 

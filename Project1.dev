@@ -31,7 +31,7 @@ CommandLine =
 Folders = 
 IncludeVersionInfo = 0
 SupportXPThemes = 0
-CompilerSet = 5
+CompilerSet = 1
 StaticLink = 0
 AddCharset = 1
 ExecEncoding = SYSTEM
@@ -44,9 +44,9 @@ UseUTF8 = 1
 
 
 [Unit1]
-FileName = data.txt
+FileName = utils.h
 CompileCpp = 0
-Folder = 其他文件
+Folder = 头文件
 Compile = 0
 Link = 0
 Priority = 1000
@@ -77,33 +77,7 @@ SyncProduct = 1
 
 
 [Unit2]
-FileName = file.h
-CompileCpp = 0
-Folder = 头文件
-Compile = 0
-Link = 0
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
-
-
-[Unit3]
-FileName = all.h
-CompileCpp = 0
-Folder = 头文件
-Compile = 0
-Link = 0
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
-
-
-[Unit4]
-FileName = student.c
+FileName = utils.c
 CompileCpp = 0
 Folder = 源文件
 Compile = 1
@@ -115,7 +89,7 @@ FileEncoding = PROJECT
 RealEncoding = UTF-8
 
 
-[Unit5]
+[Unit3]
 FileName = README.md
 CompileCpp = 0
 Folder = 其他文件
@@ -128,7 +102,7 @@ FileEncoding = PROJECT
 RealEncoding = ASCII
 
 
-[Unit6]
+[Unit4]
 FileName = note.md
 CompileCpp = 0
 Folder = 其他文件
@@ -141,8 +115,21 @@ FileEncoding = PROJECT
 RealEncoding = UTF-8
 
 
-[Unit7]
-FileName = file.c
+[Unit5]
+FileName = all.h
+CompileCpp = 0
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+
+
+[Unit6]
+FileName = student.c
 CompileCpp = 0
 Folder = 源文件
 Compile = 1
@@ -151,10 +138,36 @@ Priority = 1000
 OverrideBuildCmd = 0
 BuildCmd = 
 FileEncoding = PROJECT
-RealEncoding = ASCII
+RealEncoding = UTF-8
+
+
+[Unit7]
+FileName = testData.txt
+CompileCpp = 0
+Folder = 其他文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
 
 
 [Unit8]
+FileName = file.h
+Folder = 头文件
+Compile = 0
+Link = 0
+Priority = 1000
+OverrideBuildCmd = 0
+BuildCmd = 
+FileEncoding = PROJECT
+RealEncoding = UTF-8
+CompileCpp = 0
+
+
+[Unit9]
 FileName = main.c
 Folder = 源文件
 Compile = 1
@@ -167,21 +180,8 @@ RealEncoding = UTF-8
 CompileCpp = 0
 
 
-[Unit9]
-FileName = testData.txt
-Folder = 其他文件
-Compile = 0
-Link = 0
-Priority = 1000
-OverrideBuildCmd = 0
-BuildCmd = 
-FileEncoding = PROJECT
-RealEncoding = UTF-8
-CompileCpp = 0
-
-
 [Unit10]
-FileName = utils.h
+FileName = student.h
 Folder = 头文件
 Compile = 0
 Link = 0
@@ -194,7 +194,7 @@ CompileCpp = 0
 
 
 [Unit11]
-FileName = utils.c
+FileName = file.c
 Folder = 源文件
 Compile = 1
 Link = 1
@@ -207,9 +207,9 @@ CompileCpp = 0
 
 
 [Unit12]
-FileName = student.h
+FileName = data.txt
 CompileCpp = 0
-Folder = 头文件
+Folder = 其他文件
 Compile = 0
 Link = 0
 Priority = 1000
@@ -220,6 +220,7 @@ RealEncoding = UTF-8
 
 
 [CompilerSettings]
+c_cmd_opt_std = 
 cc_cmd_opt_debug_info = on
 cc_cmd_opt_use_pipe = on
 cc_cmd_opt_warning_all = on
