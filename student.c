@@ -68,7 +68,7 @@ int creat_stu_talbe(char* file_name) {
  */
 int insert_stu_file(student* stu) {
 	FILE* fp;
-	fp = fopen(FILE_NAME, "a+");
+	fp = fopen(FILE_NAME, "a");
 	setPoisitionByLine(fp, 2); //控制文件流指针到第二行，使得其不读取上面两行（也就是表头
 	if (fp == NULL) {
 		perror("fopen");
@@ -99,6 +99,7 @@ int insert_stu_file(student* stu) {
 		perror("fprintf");
 		return 1;
 	}
+	fflush(fp);
 	fclose(fp);
 	return 0;
 }

@@ -5,9 +5,9 @@ CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
 RES      = Project1_private.res
-OBJ      = student.o file.o main.o utils.o $(RES)
-LINKOBJ  = student.o file.o main.o utils.o Project1_private.res
-CLEANOBJ  =  student.o file.o main.o utils.o  Project1_private.res Project1.exe
+OBJ      = file.o utils.o main.o student.o $(RES)
+LINKOBJ  = file.o utils.o main.o student.o Project1_private.res
+CLEANOBJ  =  file.o utils.o main.o student.o  Project1_private.res Project1.exe
 LIBS     = 
 INCS     =  
 CXXINCS  =  
@@ -27,17 +27,17 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-student.o: student.c all.h utils.h student.h
-	$(CC) -c student.c -o student.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
-
 file.o: file.c file.h
-	$(CC) -c file.c -o file.o $(CFLAGS) 
+	$(CC) -c file.c -o file.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
 
-main.o: main.c file.h all.h student.h
+utils.o: utils.c utils.h
+	$(CC) -c utils.c -o utils.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.c all.h student.h file.h utils.h
 	$(CC) -c main.c -o main.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
 
-utils.o: utils.c all.h utils.h
-	$(CC) -c utils.c -o utils.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+student.o: student.c all.h student.h file.h utils.h
+	$(CC) -c student.c -o student.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
 
 Project1_private.res: Project1_private.rc 
 	$(WINDRES) -i Project1_private.rc --input-format=rc -o Project1_private.res -O coff $(WINDRESFLAGS) 

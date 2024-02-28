@@ -1,19 +1,19 @@
 [
     {
-        "caretX": 12,
-        "caretY": 34,
-        "filename": "/home/meowrain/下载/Project1/utils.c",
+        "caretX": 1,
+        "caretY": 1,
+        "filename": "D:/project/experiment_cs/all.h",
         "focused": false,
         "isOpen": true,
         "leftChar": 1,
         "order": 2,
-        "topLine": 22
+        "topLine": 1
     },
     {
         "caretX": 1,
-        "caretY": 5,
-        "filename": "/home/meowrain/下载/Project1/student.h",
-        "focused": false,
+        "caretY": 1,
+        "filename": "D:/project/experiment_cs/data.txt",
+        "focused": true,
         "isOpen": true,
         "leftChar": 1,
         "order": 3,
@@ -21,52 +21,22 @@
     },
     {
         "caretX": 17,
-        "caretY": 8,
-        "filename": "/home/meowrain/下载/Project1/utils.h",
-        "focused": false,
-        "isOpen": true,
-        "leftChar": 1,
-        "order": 4,
-        "topLine": 1
-    },
-    {
-        "caretX": 1,
-        "caretY": 5,
-        "filename": "/home/meowrain/下载/Project1/student.c",
-        "focused": false,
-        "isOpen": true,
-        "leftChar": 1,
-        "order": 5,
-        "topLine": 1
-    },
-    {
-        "caretX": 1,
-        "caretY": 1,
-        "filename": "/home/meowrain/下载/Project1/data.txt",
-        "focused": true,
-        "isOpen": true,
-        "leftChar": 1,
-        "order": 6,
-        "topLine": 1
-    },
-    {
-        "caretX": 11,
-        "caretY": 34,
-        "filename": "/home/meowrain/下载/Project1/main.c",
-        "focused": false,
-        "isOpen": true,
-        "leftChar": 5,
-        "order": 0,
-        "topLine": 16
-    },
-    {
-        "caretX": 11,
-        "caretY": 15,
-        "filename": "/home/meowrain/下载/Project1/file.c",
+        "caretY": 9,
+        "filename": "D:/project/experiment_cs/utils.c",
         "focused": false,
         "isOpen": true,
         "leftChar": 1,
         "order": 1,
         "topLine": 1
+    },
+    {
+        "caretX": 35,
+        "caretY": 18,
+        "filename": "D:/project/experiment_cs/student.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 10
     }
 ]
